@@ -1,0 +1,174 @@
+[
+  {
+    "name": "afor_digital",
+    "image": "afor_digital.gif",
+    "buff": ["react", "unocss"],
+    "debuff": ["storybook", "astro"]
+  },
+  {
+    "name": "danirod_",
+    "image": "danirod_.gif",
+    "attack": "kiwi",
+    "buff": ["java", "rust"],
+    "debuff": ["javascript", "typescript"]
+  },
+  {
+    "name": "ManzDev",
+    "image": "manzdev.png",
+    "buff": ["css", "javascript"],
+    "debuff": ["tailwind", "bootstrap"]
+  },
+  {
+    "name": "midudev",
+    "image": "midudev.gif",
+    "buff": ["javascript", "nextjs"],
+    "debuff": ["java", "angular"]
+  },
+  {
+    "name": "MoureDev",
+    "image": "mouredev.gif",
+    "buff": ["python", "swift"],
+    "debuff": ["javascript", "flutter"]
+  },
+  {
+    "name": "MatiasBaldanza",
+    "image": "matiasbaldanza.gif",
+    "buff": ["typescript", "ruby"],
+    "debuff": ["c++", "java"]
+  },
+  {
+    "name": "PadawansTrainer",
+    "image": "padawanstrainer.gif",
+    "attack": ["castor"],
+    "buff": ["php", "javascript"],
+    "debuff": ["python", "react"]
+  },
+  {
+    "name": "GoncyPozzo",
+    "image": "goncypozzo.png",
+    "buff": ["typescript", "nextjs"],
+    "debuff": ["css", "angular"]
+  },
+  {
+    "name": "Todocode",
+    "image": "todocode.png",
+    "buff": ["java", "sql"],
+    "debuff": ["react", "python"]
+  },
+  {
+    "name": "HitHeart",
+    "image": "hitheart.png",
+    "buff": ["angular", "typescript"],
+    "debuff": ["tailwind", "java"]
+  },
+  {
+    "name": "gentleman_programming",
+    "image": "gentleman_programming.png",
+    "buff": ["angular", "go"],
+    "debuff": ["tailwind", "react"]
+  },
+  {
+    "name": "PatitoDev",
+    "image": "patitodev.png",
+    "buff": ["godot", "typescript"],
+    "debuff": ["chatgpt", "unity"]
+  },
+  {
+    "name": "RothioTome",
+    "image": "rothiotome.png",
+    "buff": ["godot", "unity"],
+    "debuff": ["", ""]
+  },
+  {
+    "name": "Serudda",
+    "image": "serudda.png",
+    "buff": ["react", "tailwind"],
+    "debuff": ["java", "c#"]
+  },
+  {
+    "name": "RafaLagoon",
+    "image": "rafalagoon.png",
+    "buff": ["godot", ""],
+    "debuff": ["", "unity"]
+  },
+  {
+    "name": "Altaskur",
+    "image": "altaskur.png",
+    "buff": ["figma", "css"],
+    "debuff": ["java", ""]
+  },
+  {
+    "name": "ChrisvDev",
+    "image": "chrisvdev.png",
+    "buff": ["javascript", "c++"],
+    "debuff": ["", ""]
+  },
+  {
+    "name": "CursosDeDesarrollo",
+    "image": "cursosdedesarrollo.png",
+    "buff": ["docker", "java"],
+    "debuff": ["", ""]
+  },
+  {
+    "name": "GuillermoRodas",
+    "image": "guillermorodas.png",
+    "buff": ["javascript", "react"],
+    "debuff": ["", ""]
+  },
+  {
+    "name": "HdeLeonNet",
+    "attack": "cerveza",
+    "image": "hdeleonnet.png",
+    "buff": ["c#", "sql"],
+    "debuff": ["javascript", "css"]
+  },
+  {
+    "name": "ikurotime",
+    "image": "ikurotime.png",
+    "buff": ["", ""],
+    "debuff": ["", ""]
+  },
+  {
+    "name": "LuisLlamas_es",
+    "image": "luisllamas_es.png",
+    "buff": ["c#", "javascript"],
+    "debuff": ["python", "react"]
+  },
+  {
+    "name": "malpicado",
+    "image": "malpicado.png",
+    "buff": ["", ""],
+    "debuff": ["", ""]
+  },
+  {
+    "name": "melenitasdev",
+    "image": "melenitasdev.png",
+    "attack": "paella",
+    "buff": ["", ""],
+    "debuff": ["", ""]
+  },
+  {
+    "name": "ninfuwu",
+    "image": "ninfuwu.png",
+    "buff": ["tailwind", "nextjs"],
+    "debuff": ["css", ""]
+  },
+  {
+    "name": "programacion_es",
+    "image": "programacion_es.png",
+    "buff": ["", ""],
+    "debuff": ["", ""]
+  },
+  {
+    "name": "s4vitaar",
+    "image": "s4vitaar.png",
+    "buff": ["bash", "python"],
+    "debuff": ["javascript", "html"]
+  },
+  {
+    "name": "vamoacodear",
+    "image": "vamoacodear.png",
+    "buff": ["docker", "react"],
+    "debuff": ["", ""]
+  }
+]

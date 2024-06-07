@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+		"dbaeumer.vscode-eslint",
+		"stylelint.vscode-stylelint",
+		"esbenp.prettier-vscode",
+		"Tobermory.es6-string-html",
+		"wix.vscode-import-cost",
+		"oderwat.indent-rainbow"
+	]
+}
