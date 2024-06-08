@@ -1,4 +1,4 @@
-import { BlockPlayer } from "@/objects/BlockPlayer.js";
+import { BlockPlayerContainer } from "@/objects/BlockPlayerContainer.js";
 import { WIDTH, HEIGHT, STREAMERS } from "@/modules/constants.js";
 import Phaser from "phaser";
 
@@ -27,7 +27,7 @@ export class SelectPlayerScene extends Phaser.Scene {
   }
 
   create() {
-    const players = new BlockPlayer(this);
+    const players = new BlockPlayerContainer(this);
     const beepSound = this.sound.add("beep");
     this.sound.add("music.select").setLoop(true).setVolume(0.1).play();
 
