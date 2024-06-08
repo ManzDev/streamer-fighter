@@ -2,8 +2,6 @@ import { BlockPlayer } from "@/objects/BlockPlayer.js";
 import { WIDTH, HEIGHT, STREAMERS } from "@/modules/constants.js";
 import Phaser from "phaser";
 
-const IMAGES_PATH = "images/streamers/";
-
 export class SelectPlayerScene extends Phaser.Scene {
   constructor() {
     super({
@@ -15,7 +13,7 @@ export class SelectPlayerScene extends Phaser.Scene {
   preload() {
     STREAMERS.forEach(streamer => {
       const name = streamer.toLowerCase();
-      this.load.image(name, `${IMAGES_PATH + name}.png`);
+      this.load.image(name, `images/streamers/${name}.png`);
     });
 
     for (let i = 1; i < 92; i++) {
@@ -51,7 +49,7 @@ export class SelectPlayerScene extends Phaser.Scene {
     });
 
     const interlaced = this.add.graphics();
-    interlaced.lineStyle(2, 0x000000, 0.05);
+    interlaced.lineStyle(2, 0x000000, 0.025);
     for (let i = 0; i < HEIGHT; i = i + 6) {
       interlaced.lineBetween(0, i, WIDTH, i);
     }
