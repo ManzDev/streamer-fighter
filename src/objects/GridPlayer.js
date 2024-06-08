@@ -1,7 +1,7 @@
 import Phaser from "phaser";
-import { Constants } from "@/modules/constants.js";
+import { STREAMERS, IMAGE_SIZE, SCALE, HEIGHT } from "@/modules/constants.js";
 
-const FRAMESIZE = (Constants.imageSize * Constants.scale) + 2;
+const FRAMESIZE = (IMAGE_SIZE * SCALE) + 2;
 
 const NUM_COLS = 7;
 const NUM_ROWS = 4;
@@ -20,7 +20,7 @@ export class GridPlayer extends Phaser.GameObjects.Container {
 
     this.firstPlayer = this.scene.add.image(
       0,
-      Constants.height,
+      HEIGHT,
       this.streamers[this.selectedStreamer].texture)
       .setDepth(0)
       .setScale(10)
@@ -36,12 +36,12 @@ export class GridPlayer extends Phaser.GameObjects.Container {
   }
 
   createStreamers() {
-    Constants.streamers.forEach((streamer, index) => {
+    STREAMERS.forEach((streamer, index) => {
       const image = this.scene.add.image(0, 0, streamer.toLowerCase())
         .setOrigin(0)
         .setDepth(10)
         .setAlpha(0.25)
-        .setScale(Constants.scale);
+        .setScale(SCALE);
       this.streamers.push(image);
     });
 
@@ -55,13 +55,13 @@ export class GridPlayer extends Phaser.GameObjects.Container {
     });
   }
 
-  setActivePrev() {
+  prev() {
     this.selectedStreamer = (this.selectedStreamer - 1);
     if (this.selectedStreamer < 0) this.selectedStreamer = this.streamers.length - 1;
     this.setActive(this.selectedStreamer);
   }
 
-  setActiveNext() {
+  next() {
     this.selectedStreamer = (this.selectedStreamer + 1) % this.streamers.length;
     this.setActive(this.selectedStreamer);
   }
@@ -86,6 +86,6 @@ export class GridPlayer extends Phaser.GameObjects.Container {
       onComplete: () => (streamer.y = startY)
     });
 
-    this.firstPlayer?.setTexture(Constants.streamers[number].toLowerCase());
+    this.firstPlayer?.setTexture(STREAMERS[number].toLowerCase());
   }
 }

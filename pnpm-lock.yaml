@@ -8,6 +8,9 @@ dependencies:
   phaser:
     specifier: ^3.80.1
     version: 3.80.1
+  webfontloader:
+    specifier: ^1.6.28
+    version: 1.6.28
 
 devDependencies:
   eslint:
@@ -2917,6 +2920,10 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
+
+  /webfontloader@1.6.28:
+    resolution: {integrity: sha512-Egb0oFEga6f+nSgasH3E0M405Pzn6y3/9tOVanv/DLfa1YBIgcv90L18YyWnvXkRbIM17v5Kv6IT2N6g1x5tvQ==}
+    dev: false
 
   /which-boxed-primitive@1.0.2:
     resolution: {integrity: sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg==}

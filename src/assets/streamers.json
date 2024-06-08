@@ -170,5 +170,41 @@
     "image": "vamoacodear.png",
     "buff": ["docker", "react"],
     "debuff": ["", ""]
+  },
+  {
+    "name": "odraciRdev",
+    "image": "odracirdev.png",
+    "buff": ["html", "wordpress"],
+    "debuff": ["angular", "java"]
+  },
+  {
+    "name": "UXAnaRangel",
+    "image": "uxanarangel.png",
+    "buff": ["figma", "astro"],
+    "debuff": ["git", "css"]
+  },
+  {
+    "name": "FrancoLabs",
+    "image": "francolabs.png",
+    "buff": ["", ""],
+    "debuff": ["", ""]
+  },
+  {
+    "name": "Pythonesa",
+    "image": "pythonesa.png",
+    "buff": ["python", ""],
+    "debuff": ["", ""]
+  },
+  {
+    "name": "CarlosAzaustre",
+    "image": "carlosazaustre.png",
+    "buff": ["javascript", "react"],
+    "debuff": ["", ""]
+  },
+  {
+    "name": "CarmenAnsio",
+    "image": "carmenansio.png",
+    "buff": ["css", "figma"],
+    "debuff": ["", ""]
   }
 ]

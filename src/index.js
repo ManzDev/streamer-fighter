@@ -1,14 +1,15 @@
 import Phaser from "phaser";
 import { SelectPlayerScene } from "./scenes/SelectPlayer.js";
-import { Constants } from "./modules/constants.js";
+import { WIDTH, HEIGHT, ZOOM } from "./modules/constants.js";
+import WebFont from "webfontloader";
 
 const config = {
   type: Phaser.WEBGL,
   parent: "container",
-  width: Constants.width,
-  height: Constants.height,
+  width: WIDTH,
+  height: HEIGHT,
   scale: {
-    zoom: Constants.zoom
+    zoom: ZOOM
   },
   /* physics */
   pixelArt: true,
@@ -16,5 +17,13 @@ const config = {
   scene: [SelectPlayerScene]
 };
 
-// eslint-disable-next-line
-const game = new Phaser.Game(config);
+WebFont.load({
+  custom: {
+    families: ["EnterCommand"],
+    urls: ["css/fonts.css"]
+  },
+  active: () => {
+    // eslint-disable-next-line
+    const game = new Phaser.Game(config);
+  }
+});
