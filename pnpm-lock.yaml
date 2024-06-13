@@ -8,6 +8,9 @@ dependencies:
   phaser:
     specifier: ^3.80.1
     version: 3.80.1
+  phaser-plugin-scene-watcher:
+    specifier: ^6.0.0
+    version: 6.0.0(phaser@3.80.1)
   webfontloader:
     specifier: ^1.6.28
     version: 1.6.28
@@ -2265,6 +2268,14 @@ packages:
     resolution: {integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==}
     engines: {node: '>=8'}
     dev: true
+
+  /phaser-plugin-scene-watcher@6.0.0(phaser@3.80.1):
+    resolution: {integrity: sha512-n3GWJH8I9mmwzYi6phI1g9Y8i75QpKJYd27gmn2Oi4Erxs8vWvlGTYoGqfqz13PyPEuTWBxVEnbG1rTYWIBasw==}
+    peerDependencies:
+      phaser: ^3.16.2
+    dependencies:
+      phaser: 3.80.1
+    dev: false
 
   /phaser@3.80.1:
     resolution: {integrity: sha512-VQGAWoDOkEpAWYkI+PUADv5Ql+SM0xpLuAMBJHz9tBcOLqjJ2wd8bUhxJgOqclQlLTg97NmMd9MhS75w16x1Cw==}

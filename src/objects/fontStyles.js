@@ -26,3 +26,18 @@ export const titleFontStyle = {
   strokeThickness: 6,
   stroke: "#d31850"
 };
+
+export const baseHudStyle = {
+  fontFamily: "EnterCommand",
+  fontSize: 32,
+  stroke: "#ca52c9",
+  strokeThickness: 4,
+  shadow: {
+    offsetX: 0,
+    offsetY: 2,
+    color: "#00000066",
+    blur: 0,
+    stroke: true,
+    fill: false
+  },
+};

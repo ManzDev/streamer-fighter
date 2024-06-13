@@ -1,7 +1,11 @@
 import Phaser from "phaser";
-import { SelectPlayerScene } from "./scenes/SelectPlayer.js";
 import { WIDTH, HEIGHT, ZOOM } from "./modules/constants.js";
 import WebFont from "webfontloader";
+import SceneWatcherPlugin from "phaser-plugin-scene-watcher";
+
+// Scenes
+import { SelectPlayerScene } from "./scenes/SelectPlayer.js";
+import { GameScene } from "./scenes/GameScene.js";
 
 const config = {
   type: Phaser.WEBGL,
@@ -14,13 +18,17 @@ const config = {
   /* physics */
   pixelArt: true,
   backgroundColor: "#000000",
-  scene: [SelectPlayerScene]
+  scene: [SelectPlayerScene, GameScene],
+  plugins: {
+    global: [
+      { key: "SceneWatcher", plugin: SceneWatcherPlugin, start: false }
+    ]
+  }
 };
 
 WebFont.load({
   custom: {
     families: ["EnterCommand"],
-    urls: ["css/fonts.css"]
   },
   active: () => {
     // eslint-disable-next-line

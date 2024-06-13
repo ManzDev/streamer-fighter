@@ -22,6 +22,7 @@
   "license": "ISC",
   "dependencies": {
     "phaser": "^3.80.1",
+    "phaser-plugin-scene-watcher": "^6.0.0",
     "webfontloader": "^1.6.28"
   }
 }

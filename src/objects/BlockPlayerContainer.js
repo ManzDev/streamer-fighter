@@ -103,6 +103,11 @@ export class BlockPlayerContainer extends Phaser.GameObjects.Container {
       this.scene.sound.add("ready").play();
       this.players.forEach(player => player.bgTween.stop());
       this.title.setText("vs").setY(100);
+
+      this.scene.registry.set("player1", this.players[0].playerName.text);
+      this.scene.registry.set("player2", this.players[1].playerName.text);
+
+      this.scene.scene.start("GameScene");
     }
   }
 

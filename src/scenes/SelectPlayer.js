@@ -49,13 +49,11 @@ export class SelectPlayerScene extends Phaser.Scene {
     });
 
     const interlaced = this.add.graphics();
-    interlaced.lineStyle(2, 0x000000, 0.025);
+    interlaced.lineStyle(2, 0x000000, 0.05);
     for (let i = 0; i < HEIGHT; i = i + 6) {
       interlaced.lineBetween(0, i, WIDTH, i);
     }
-  }
 
-  update() {
-
+    this.scene.start("GameScene"); // TO DO
   }
 }
