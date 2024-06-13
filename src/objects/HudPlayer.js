@@ -34,6 +34,10 @@ export class HudPlayer extends Phaser.GameObjects.Container {
       ]
     });
 
+    if (playerNumber === 1) {
+      energyBar.setAlignRight(true);
+    }
+
     if (playerNumber === 2) {
       headImage.setX(550).setFlipX(true);
       playerText.setStyle({ ...baseHudStyle, fixedWidth: 275, align: "right" });
