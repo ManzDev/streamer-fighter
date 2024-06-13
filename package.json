@@ -23,6 +23,7 @@
   "dependencies": {
     "phaser": "^3.80.1",
     "phaser-plugin-scene-watcher": "^6.0.0",
+    "tmi.js": "^1.8.5",
     "webfontloader": "^1.6.28"
   }
 }

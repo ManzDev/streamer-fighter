@@ -5,6 +5,13 @@
     url("fonts/entercommand.woff") format("woff");
 }
 
+@font-face {
+  font-family: Pixellari;
+  src:
+    url("fonts/pixellari.woff2") format("woff2"),
+    url("fonts/pixellari.woff") format("woff");
+}
+
 body {
   background: #171717;
 }

@@ -41,3 +41,22 @@ export const baseHudStyle = {
     fill: false
   },
 };
+
+/**
+ * @type {Phaser.Types.GameObjects.Text.TextStyle}
+ */
+export const baseTimeStyle = {
+  fontFamily: "Pixellari",
+  fontSize: 55,
+  // fixedWidth: 66,
+  padding: {
+    x: 6
+  },
+  align: "left",
+  shadow: {
+    offsetY: 4,
+    color: "#000000aa",
+    blur: 0,
+    fill: true
+  }
+};

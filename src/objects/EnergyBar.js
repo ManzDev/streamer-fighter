@@ -51,7 +51,9 @@ export class EnergyBar extends Phaser.GameObjects.Container {
     this.add(gradientTexture);
     this.gradient = gradientTexture;
 
-    setTimeout(() => this.setValue(50), 2000);
+    // this.changeColor();
+
+    setTimeout(() => this.setValue(75), 2000);
   }
 
   setFlipX(value) {
@@ -70,7 +72,6 @@ export class EnergyBar extends Phaser.GameObjects.Container {
     const c1 = Phaser.Display.Color.IntegerToColor(0x99e65f);
     const c2 = Phaser.Display.Color.IntegerToColor(0xfbbe0e);
 
-    /*
     this.scene.tweens.addCounter({
       from: 0,
       to: 100,
@@ -81,9 +82,9 @@ export class EnergyBar extends Phaser.GameObjects.Container {
         this.bar.fillColor = Phaser.Display.Color.GetColor(r, g, b);
       }
     });
-    */
-    const { r, g, b } = Phaser.Display.Color.Interpolate.ColorWithColor(c1, c2, 100);
-    this.bar.fillColor = Phaser.Display.Color.GetColor(r, g, b);
+
+    // const { r, g, b } = Phaser.Display.Color.Interpolate.ColorWithColor(c1, c2, 100);
+    // this.bar.fillColor = Phaser.Display.Color.GetColor(r, g, b);
   }
 
   setValue(value) {
@@ -104,7 +105,6 @@ export class EnergyBar extends Phaser.GameObjects.Container {
         },
         onComplete: () => {
           this.energy = value;
-          this.changeColor();
         }
       });
     }

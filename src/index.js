@@ -15,7 +15,16 @@ const config = {
   scale: {
     zoom: ZOOM
   },
-  /* physics */
+  physics: {
+    default: "arcade",
+    arcade: {
+      debug: true,
+      gravity: {
+        y: 200
+      }
+    }
+  },
+
   pixelArt: true,
   backgroundColor: "#000000",
   scene: [SelectPlayerScene, GameScene],
@@ -28,7 +37,7 @@ const config = {
 
 WebFont.load({
   custom: {
-    families: ["EnterCommand"],
+    families: ["EnterCommand", "Pixellari"],
   },
   active: () => {
     // eslint-disable-next-line
