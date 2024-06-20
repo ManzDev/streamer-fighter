@@ -19,8 +19,8 @@ export class HudContainer extends Phaser.GameObjects.Container {
     this.add(rectangle);
 
     this.players = [];
-    const playerName1 = "afor_digital"; // this.scene.registry.get("player1");
-    const playerName2 = "uxanarangel"; // this.scene.registry.get("player2");
+    const playerName1 = this.scene.registry.get("player1");
+    const playerName2 = this.scene.registry.get("player2");
     const player1 = new HudPlayer(scene, x, y, {
       playerNumber: 1,
       playerName: playerName1

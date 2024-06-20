@@ -18,8 +18,18 @@ export class Player extends Phaser.GameObjects.Image {
 
     this.body.setCollideWorldBounds();
 
-    this.minX = this.x - 60;
-    this.maxX = this.x + 60;
+    this.body.allowGravity = false;
+    this.body.setSize(SCALE * 1.5, SCALE * 3);
+
+    this.minX = this.x - 80;
+    this.maxX = this.x + 80;
+
+    this.setInteractive();
+
+    this.on("pointerdown", function (pointer) {
+      if (pointer.leftButtonDown()) { this.heal(); }
+      if (pointer.rightButtonDown()) { this.damage(); }
+    });
   }
 
   moveLeft() {
@@ -42,8 +52,50 @@ export class Player extends Phaser.GameObjects.Image {
     });
   }
 
+  damage() {
+    console.log("Damage!");
+    // this.effect = this.postFX.addBloom(0xffffff, 2, 2, 2, 1);
+    // this.effect = this.postFX.addBarrel(1.1);
+    // this.effect = this.postFX.addCircle(4, 0xfeedb6, 0xff0000, 0.6, 0.005);
+    this.preFX.setPadding(32);
+    const fx = this.preFX.addGlow(0xff0000, 4, 0, false, 0.1, 10);
+
+    this.scene.tweens.add({
+      targets: fx,
+      outerStrength: 175,
+      yoyo: true,
+      loop: -1,
+      ease: "power2"
+    });
+
+    // this.setTint(0xFF0000, 0xAA0000, 0xCC0000, 0xAA2222);
+    // this.setAlpha(0.5);
+  }
+
+  shine() {
+    this.postFX.addShine(1, 0.4, 8);
+
+    this.add.tween({
+      targets: this,
+      duration: 4000,
+      repeatDelay: 800,
+      rotateY: 360,
+      repeat: -1
+    });
+  }
+
+  heal() {
+    console.log("Heal!");
+    this.effect = this.postFX.addBarrel(0.8);
+  }
+
+  clear() {
+    // this.preFX.remove(this.effect);
+    // this.clearTint();
+    // this.setAlpha(1);
+  }
+
   overlap(item) {
-    // console.log("El item", item, ` ha colisionado con ${this.texture.key}`);
-    this.setTintFill(0x423383, 0x184148, 0x143345, 0x133834);
+    this.damage();
   }
 }
